@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# ^ this is for foreign text
+# ^ this is for foreign text!
 from sys import exit
 import sys
 from playsound import playsound as play
