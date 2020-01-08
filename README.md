@@ -43,6 +43,6 @@ Then download the Game Files folder and all its contents.
 When you download everything from above, open the folder 'Game Files' on your computer. Then open a terminal from that directory. Then type the following:
 
 ```
-python3 ex45.py
+python3 Ex36.py
 ```
 And that's it! The game should run. Have fun and feel free to reach out if there's any bugs.
