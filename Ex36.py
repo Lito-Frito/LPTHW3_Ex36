@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-# ^ this is for foreign text
+# ^ this is for foreign text.
 from sys import exit
 import sys
 from playsound import playsound as play
-#f"Items:\n, ' '.join{item_list}"
 
 def ascii_art_prank(): #Done
     input('Hello, press Enter to start game or CTRL Z at any point to terminate the game.')
@@ -160,10 +159,10 @@ You can also try to touch the mirror if that's your thing.
         painting_one(user_name, item_list)
         touch_painting_returned_val = touch_painting(user_name, item_list)
 
-        if touch_painting_returned_val is 'no':
+        if touch_painting_returned_val == 'no':
             input()
             what_direction(user_name, item_list, smudged_painting)
-        elif touch_painting_returned_val is 'yes':
+        elif touch_painting_returned_val == 'yes':
             sucked_in(user_name)
             AOT(user_name, item_list)
         else:
@@ -175,10 +174,10 @@ You can also try to touch the mirror if that's your thing.
         painting_two(user_name, item_list)
         touch_painting_returned_val = touch_painting(user_name, item_list)
 
-        if touch_painting_returned_val is 'no':
+        if touch_painting_returned_val == 'no':
             input()
             what_direction(user_name, item_list, smudged_painting)
-        elif touch_painting_returned_val is 'yes':
+        elif touch_painting_returned_val == 'yes':
             sucked_in(user_name)
             my_hero(user_name, item_list)
         else:
@@ -191,11 +190,11 @@ You can also try to touch the mirror if that's your thing.
         touch_painting_returned_val = touch_painting(user_name, item_list)
 
         while True:
-            if touch_painting_returned_val is 'no':
+            if touch_painting_returned_val == 'no':
                 input()
                 what_direction(user_name, item_list, smudged_painting)
                 break
-            elif touch_painting_returned_val is 'yes'  and smudged_painting == False:
+            elif touch_painting_returned_val == 'yes'  and smudged_painting == False:
                 print("""\nYou touching the painting smudged it.
 You have ruined the painting.
 You are filled with shame ☹ .""")
@@ -208,7 +207,7 @@ You quickly walk back to the middle of the room after this faux pas.""")
                 smudged_painting = True
                 input()
                 what_direction(user_name, item_list, smudged_painting)
-            elif touch_painting_returned_val is 'yes'  and smudged_painting == True:
+            elif touch_painting_returned_val == 'yes'  and smudged_painting == True:
                 print("""\nYou reach out to touch the painting, but immediately notice your past mistake.
 You are filled with shame again and wonder why you tried this painting again.
 You scurry back to the center room, hopefully remembering your choices.""")
